@@ -1,0 +1,30 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "4321:4321"
+    container_name: f4t_frontend
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    container_name: f4t_backend
+    environment:
+      IPFS_API: "http://ipfs:5001"
+    depends_on:
+      - ipfs
+
+  ipfs:
+    image: ipfs/kubo:latest
+    ports:
+      - "5001:5001" # API
+      - "4001:4001" # Swarm
+      - "8080:8080" # Gateway
+    container_name: f4t_ipfs
+    volumes:
+      - ./ipfs:/data/ipfs
