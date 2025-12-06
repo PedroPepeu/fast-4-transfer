@@ -1,26 +1,11 @@
 ---
-import "@style/global.css";
-import Header from "./components/Header.astro";
-import UploadFiles from "./components/UploadFiles.astro";
-import Footer from "./components/Footer.astro";
+import BaseLayout from "@root/layouts/base.astro";
+import UploadFiles from "@root/components/UploadFiles.astro";
+import Button from "@root/components/Button.astro";
 ---
 
-<html lang="en">
-  <head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>F4T</title>
-  </head>
-  <body class="min-h-screen flex flex-col justify-between">
-    <!-- header -->
-    <Header />
-
-    <!-- content -->
-    <UploadFiles />
-
-    <!-- footer -->
-    <Footer />
-  </body>
-</html>
+<BaseLayout>
+  <UploadFiles>
+    <Button enabled={false} btnText="Upload" />
+  </UploadFiles>
+</BaseLayout>

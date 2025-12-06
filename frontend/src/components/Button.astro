@@ -1,0 +1,22 @@
+---
+import "@style/global.css";
+
+interface Props {
+    enabled?: boolean;
+    btnText: string;
+}
+
+const { enabled, btnText = "Default" } = Astro.props;
+---
+
+<button 
+    id="upload-btn"
+    type="button"
+    disabled={enabled === false}
+    class={
+        `m-4 text-white box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none bg-gray-900
+        ${enabled === false ? " opacity-50 cursor-not-allowed" : " hover:bg-gray-700"}`
+    }
+>
+    {btnText}
+</button>

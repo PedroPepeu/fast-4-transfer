@@ -1,0 +1,26 @@
+---
+import "@style/global.css";
+import Header from "@root/components/Header.astro";
+import Footer from "@root/components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>F4T</title>
+  </head>
+  <body class="min-h-screen flex flex-col justify-between">
+    <!-- header -->
+    <Header />
+
+    <!-- content -->
+    <slot /> 
+    <!-- <UploadFiles /> -->
+
+    <!-- footer -->
+    <Footer />
+  </body>
+</html>
