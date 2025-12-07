@@ -8,4 +8,5 @@
 - ...
 
 ## devops/
-- ...
+- IPFS_PATH=./data ipfs init --profile=server
+

@@ -6,6 +6,7 @@ import Button from "@root/components/Button.astro";
 
 <BaseLayout>
   <UploadFiles>
-    <Button enabled={false} btnText="Upload" />
+    <!-- check if the client:load is correct -->
+    <Button enabled={false} btnText="Upload" client:load/>
   </UploadFiles>
 </BaseLayout>

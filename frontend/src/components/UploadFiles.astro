@@ -2,7 +2,13 @@
 import "@style/global.css";
 ---
 
-<form id="files-upload-form" class="px-4 py-4 w-full">
+<form 
+    id="files-upload-form" 
+    class="px-4 py-4 w-full"
+    method="POST"
+    enctype="multipart/form-data"
+    action="/upload"
+>
     <div class="flex items-center justify-center w-full">
         <label
             for="dropzone-file"
