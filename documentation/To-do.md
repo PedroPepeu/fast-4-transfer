@@ -13,4 +13,7 @@
 - `go get github.com/ipfs/go-ipfs-api` connecting backend with ipfs
 
 ## DevOps
-- Need to fix the IPFS, and implement better the docker
+- Need to fix the IPFS
+- Implement backend dockerfile
+- Implement frontend dockerfile
+- Fix the docker as an whole to make everything running
