@@ -6,6 +6,7 @@
 - Learn how to use rooter in astro.
 - Update the drag-and-drop the files, fix the files names, and file max size.
 - Write the `about` using `.md` just to talk about the information of the size and how it works, like an *whitepaper*.
+- Add an warning below the files, in red, so the user can remember that the files are not 'secures' and 'anyone' can see (Check if there is an way to secure the files)
 
 ## Backend
 - Create an route to receive data from DAD.
