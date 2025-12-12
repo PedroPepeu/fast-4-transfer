@@ -13,6 +13,7 @@
 - Create an route to receive data from DAD.
 - Send this data to IPFS and get the link to render the other page.
 - `go get github.com/ipfs/go-ipfs-api` connecting backend with ipfs
+- Create the documentation to run the backend and show how it works
 
 ## DevOps
 - Need to fix the IPFS
